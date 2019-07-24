@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html class="" lang="en"><head class="at-element-marker">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta name="keywords">
+<meta name="description" content="If you're looking for JavaScript practice problems, the best books to learn JavaScript, JavaScript courses, or JavaScript webinars, we have it all! Learning JavaScript is complicated. Let JavaScript.com's resources guide you today!">
+<meta property="og:description" content="If you're looking for JavaScript practice problems, the best books to learn JavaScript, JavaScript courses, or JavaScript webinars, we have it all! Learning JavaScript is complicated. Let JavaScript.com's resources guide you today!">
+<meta name="twitter:description" content="If you're looking for JavaScript practice problems, the best books to learn JavaScript, JavaScript courses, or JavaScript webinars, we have it all! Learning JavaScript is complicated. Let JavaScript.com's resources guide you today!">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@pluralsight">
+<meta property="og:image" content="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/resource-center/resource-center-default.jpg">
+<meta name="twitter:image" content="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/resource-center/resource-center-default.jpg">
+<meta name="robots" content="index, follow">
+<meta name="content-type" content="Page">
+<meta name="categories" content="page">
+<link rel="canonical" href="https://www.javascript.com/resources">
+<script src="JavaScript._files/1067.js" async="" type="text/javascript"></script><script data-cfasync="false">window.wcmmodedisabled = true;</script>
+<script data-cfasync="false">
+function getParameterByName(e,o){o||(o=window.location.href),e=e.replace(/[\[\]]/g,"\\$&");var n=new RegExp("[?&]"+e+"(=([^&#]*)|&|#|$)").exec(o);return n&&n[2]?decodeURIComponent(n[2].replace(/\+/g," ")):""}function changeHistoryQueryParam(e,o,n,t,a){if(history.pushState){var i=""==window.location.search?"?":window.location.search;if(-1!==decodeURIComponent(i).indexOf(e+"=")){var d=getParameterByName(e);if(t)if(n){var c=(p=d.split(",")).indexOf(o);if(c>-1&&p.splice(c,1),0===p.length){var r=new RegExp("&?"+e+"=[^&]*","g");i=i.replace(r,"")}else i=i.replace(e+"="+encodeURIComponent(d),e+"="+encodeURIComponent(p.join(",")))}else{var p=[];d?p=d.split(","):d="",-1===p.indexOf(o)&&(p.push(o),i=i.replace(e+"="+encodeURIComponent(d),e+"="+encodeURIComponent(p.join(","))))}else if(n){r=new RegExp("&?"+e+"=[^&]*","g");i=i.replace(r,"")}else i=i.replace(e+"="+encodeURIComponent(d),e+"="+encodeURIComponent(o))}else n||(i+="?"==i?e+"="+encodeURIComponent(o):"&"+e+"="+encodeURIComponent(o));var m=window.location.protocol+"//"+window.location.host+window.location.pathname+(a?decodeURIComponent(i):i);window.history.pushState({path:m},"",m)}}function dtmEventTrigger(e,o){var n=new CustomEvent(e,{bubbles:!0,cancelable:!1,detail:o});document.querySelector("body").dispatchEvent(n)}window.loadRemoteScript=function(e,o,n,t,a){var i=document.createElement("script");i.type=o||"text/javascript",i.id=t||null,1==n&&(i.async=n||1),i.readyState?i.onreadystatechange=function(){"loaded"!=i.readyState&&"complete"!=i.readyState||(i.onreadystatechange=null,a())}:i.onload=function(){a()},i.src=("https:"==document.location.protocol?"https://":"http://")+e,document.getElementsByTagName("head")[0].appendChild(i)};var doNotTrack=document.cookie.indexOf("ps_optout=1")>-1||document.URL.indexOf("dnt=true")>-1,oneHour=36e5,oneYear=24*oneHour*365,trkDate=new Date(Date.now()+oneHour);document.cookie="ps_trk="+(doNotTrack?"0":"1")+"; expires="+trkDate.toUTCString()+"; path=/"+(document.URL.indexOf("pluralsight.com")>-1?"; domain=pluralsight.com":"");var firstVisit=-1==document.cookie.indexOf("fv=");document.cookie="fv="+(firstVisit?"1":"0")+"; expires="+new Date(Date.now()+oneYear).toUTCString()+"; path=/"+(document.URL.indexOf("pluralsight.com")>-1?"; domain=pluralsight.com":""),window.DemandbaseMini={},window.minidbready=function(e){window.DemandbaseMini={IP:{CompanyProfile:e}},window.promoCheck&&!window.promoChecked&&window.promoCheck()},document.cookie.indexOf("ps_trk=1")>-1&&loadRemoteScript("//api.company-target.com/api/v2/ip.json?key=012bc11d09ef8437662946719f6c82d2&callback=minidbready","text/javascript",1,"demandbase_mini",function(){}),document.addEventListener("at-content-rendering-succeeded",function(){window.targetRenderComplete=!0},!1);
+</script><script type="text/javascript" id="demandbase_mini" async="" src="JavaScript._files/ip.json"></script>
+<script data-cfasync="false" src="JavaScript._files/jquery-3.js"></script>
+<link rel="stylesheet" href="JavaScript._files/uber.css" type="text/css">
+
+<script>
+        window.onload = function(){
+            if (jQuery('link[rel="stylesheet"][href*="cloud.typography.com"]').length == 0){
+                //typography didn't load - browser may not support preload.
+                jQuery('link[href*="cloud.typography.com"]').remove();
+                var link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = '//cloud.typography.com/6966154/7969012/css/fonts.css';
+                document.getElementsByTagName('HEAD')[0].appendChild(link);
+            }
+        };
+    </script>
+<script data-cfasync="false">
+if(window.loadRemoteScript=function(e,t,i,n,o){var s=document.createElement("script");s.type=t||"text/javascript",s.id=n||null,1==i&&(s.async=i||1),s.readyState?s.onreadystatechange=function(){"loaded"!=s.readyState&&"complete"!=s.readyState||(s.onreadystatechange=null,o())}:s.onload=function(){o()},s.src=("https:"==document.location.protocol?"https://":"http://")+e,document.getElementsByTagName("head")[0].appendChild(s)},-1<document.URL.indexOf("refid=")){var queryEnd=document.URL.split("refid=")[1],refID=queryEnd.split("&")[0],d=new Date;d.setTime(d.getTime()+6048e5),document.cookie="refID="+refID+"; expires="+d.toUTCString()+"; path=/"}if(-1<document.cookie.indexOf("refID=")){refID=jQuery.cookie("refID");jQuery("a[href*='cvent.com']").each(function(){-1==jQuery(this).attr("href").indexOf("refid")&&jQuery(this).attr("href",jQuery(this).attr("href")+"?refid="+refID)})}function setSelectedInterest(e){var t=new Date;t.setTime(t.getTime()+6048e5),document.cookie="ps_si="+e+"; expires="+t.toUTCString()+"; path=/",window.selectedInterest=e}function setSelectedConsumerType(e){var t=new Date;t.setTime(t.getTime()+6048e5),document.cookie="ps_sct="+e+"; expires="+t.toUTCString()+"; path=/",window.selectedConsumerType=e}function setSelectedBusinessType(e){var t=new Date;t.setTime(t.getTime()+6048e5),document.cookie="ps_sbt="+e+"; expires="+t.toUTCString()+"; path=/",window.selectedBusinessType=e}-1<document.cookie.indexOf("ps_si=")&&(window.selectedInterest=document.cookie.split("ps_si=")[1].split(";")[0]),-1<document.cookie.indexOf("ps_sct=")&&(window.selectedConsumerType=document.cookie.split("ps_sct=")[1].split(";")[0]),-1<document.cookie.indexOf("ps_sbt=")&&(window.selectedBusinessType=document.cookie.split("ps_sbt=")[1].split(";")[0]);var inflDate=new Date;inflDate.setTime(inflDate.getTime()+18e5);var visNumDate=new Date;if(visNumDate.setTime(visNumDate.getTime()+31536e6),-1<document.cookie.indexOf("ps_infl")){var infl=document.cookie.split("ps_infl=")[1].split(";")[0];document.cookie="ps_infl="+infl+"; expires="+inflDate.toUTCString()+"; path=/"}else{var visNum=1;-1<document.cookie.indexOf("ps_visNum")&&(visNum=parseInt(document.cookie.split("ps_visNum=")[1].split(";")[0])+1),document.cookie="ps_visNum="+visNum+"; expires="+visNumDate.toUTCString()+"; path=/",getParameterByName("aid")||getParameterByName("vid")||""!=document.referrer&&-1==document.referrer.indexOf("pluralsight.com")?document.cookie="ps_infl=1; expires="+inflDate.toUTCString()+"; path=/":document.cookie="ps_infl=0; expires="+inflDate.toUTCString()+"; path=/"}
+</script>
+<script src="JavaScript._files/launch-ENa63668859ab045b6a4d02d09935eab68.js" async=""></script>
+<link rel="apple-touch-icon" sizes="57x57" href="https://www.javascript.com/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://www.javascript.com/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://www.javascript.com/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://www.javascript.com/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://www.javascript.com/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://www.javascript.com/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://www.javascript.com/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://www.javascript.com/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.javascript.com/etc/clientlibs/pluralsight/main/images/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="https://www.javascript.com/etc/clientlibs/pluralsight/main/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://www.javascript.com/etc/clientlibs/pluralsight/main/images/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="https://www.javascript.com/etc/clientlibs/pluralsight/main/images/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://www.javascript.com/etc/clientlibs/pluralsight/main/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://www.javascript.com/etc/clientlibs/pluralsight/main/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://www.javascript.com/etc/clientlibs/pluralsight/main/images/favicons/safari-pinned-tab.svg" color="#e71585">
+<link rel="shortcut icon" href="https://www.javascript.com/etc/clientlibs/pluralsight/main/images/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#e71585">
+<meta name="msapplication-TileImage" content="/etc/clientlibs/pluralsight/main/images/favicons/mstile-144x144.png">
+<meta name="msapplication-config" content="/etc/clientlibs/pluralsight/main/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<title>JavaScript.com | Resources</title>
+<meta property="og:title" content="Learning Javascript is rough, use the best website to learn JavaScript, JavaScript.com!">
+<meta name="twitter:title" content="Learning Javascript is rough, use the best website to learn JavaScript, JavaScript.com!">
+<script src="JavaScript._files/analytics.js" async=""></script><script src="JavaScript._files/AppMeasurement.js" async=""></script><style id="at-makers-style" class="at-flicker-control">
+.mboxDefault {visibility: hidden;}
+</style><link rel="stylesheet" type="text/css" href="JavaScript._files/fonts.css"><script src="JavaScript._files/RC0f0038b54f3d484e91c3459f2c44a5b1-source.js" async=""></script><style type="text/css">.fancybox-margin{margin-right:17px;}</style><script type="text/javascript">
+/*T&T Metadata v3 ==>Response Plugin*/
+window.ttMETA=(typeof(window.ttMETA)!="undefined")?window.ttMETA:[];window.ttMETA.push({"CampaignName":"","CampaignId":"","RecipeName":"","RecipeId":"","OfferId":"","OfferName":"","MboxName":"target-global-mbox"});
+</script></head>
+<body class="mode-disabled javascript-page">
+<div class="site-wrap">
+<div class="nav-context ">
+<noindex>
+<header class="javascript-header header_padding">
+<a href="https://www.javascript.com/"><img class="javascript-logo logo-large" src="JavaScript._files/js-logo.png"></a>
+<a href="https://www.javascript.com/"><img class="javascript-logo logo-small" src="JavaScript._files/js-logo-sm.png"></a>
+<div class="header_utilities">
+<a href="https://www.javascript.com/try" class="button button--pink button--small">Try JavaScript</a>
+<a href="https://www.javascript.com/try" class="header-link try">Try</a>
+<a href="https://www.javascript.com/learn/strings" class="header-link">Learn</a>
+<a href="https://www.javascript.com/resources" class="header-link">Resources</a>
+<a href="https://www.javascript.com/about" class="header-link">About</a>
+</div>
+</header>
+</noindex>
+<div style="display:none;" id="b2c-top-promo">
+</div>
+<div id="site-promo" style="display:none;">
+<div id="site-promo-content"></div>
+<div class="promo-close-button">×</div>
+</div>
+<script>
+var noDBpromo=!0;function showPromoIfPermitted(){(-1==document.cookie.indexOf("site-promo-closed=1")||window.blockPromoHide)&&(jQuery("#site-promo .promo-wrapper-contents").length>-1&&""!=jQuery("#site-promo .promo-wrapper-contents").html().trim()&&jQuery("#site-promo").show(),jQuery("#b2c-top-promo").hide(),jQuery("#site-promo .promo-close-button").click(function(){var o=new Date;o.setTime(o.getTime()+864e5),document.cookie="site-promo-closed=1; expires="+o.toUTCString()+"; path=/",jQuery("#site-promo").slideUp(300)}),window.promoShown=!0,window.setStickies&&window.setStickies(),dtmEventTrigger("ps.promoShown",{}))}function promoCheck(){if(window.promoChecked=!0,document.URL.indexOf("b2b=true")>-1){var o=new Date;o.setTime(o.getTime()+6048e5),document.cookie="nopromos=1; expires="+o.toUTCString()+"; path=/; domain=pluralsight.com"}if(-1==document.cookie.indexOf("nopromos=1")&&("www.pluralsight.com"==window.location.host||"www-stage.pluralsight.com"==window.location.host)){var e=!1;"www-stage.pluralsight.com"==window.location.host&&(e=!0);var n="none",a="none",r=(new Date).valueOf();!noDBpromo&&DemandbaseMini.IP&&DemandbaseMini.IP.CompanyProfile&&(DemandbaseMini.IP.CompanyProfile.company_name&&(n=DemandbaseMini.IP.CompanyProfile.company_name),DemandbaseMini.IP.CompanyProfile.audience&&(a=DemandbaseMini.IP.CompanyProfile.audience)),jQuery.ajax({url:"/discounts/api/global-promo?company="+encodeURIComponent(n)+"&audience="+encodeURIComponent(a)+"&time="+r,headers:{authorization:"aem"}}).done(function(o){(o.campaignId||window.forceCampaignCode)&&(window.globalPromos=o.promos,window.campaignCode=window.forceCampaignCode||o.campaignId,jQuery.ajax({url:"/global/promos/"+campaignCode+"?time="+r}).done(function(o){var n=jQuery(o).find(".promo-block-filters").data("blockedpaths"),a=n?n.split(","):[],r=!1;for(i in a){var t=a[i].trim();0==t.indexOf("=")?(t=t.substring(1,t.length),window.location.pathname==t&&(r=!0,e&&console.log("Promo banners blocked on page."))):0==window.location.pathname.indexOf(t)&&(r=!0,e&&console.log("Promo banners blocked on page."))}if(!r){var m=jQuery(o).find(".promo-wrapper-filter"),d=!1;jQuery.each(m,function(o,e){var n=jQuery(e).data("allowedpaths"),a=n?n.split(","):[],r=!1;for(i in a){var t=a[i].trim();0==t.indexOf("=")?(t=t.substring(1,t.length),window.location.pathname==t&&(r=!0)):0==window.location.pathname.indexOf(t)&&(r=!0)}if(r)return jQuery("#site-promo-content").html(e),jQuery("#site-promo-content img[data-lazysrc], #site-promo-content .lazy-bg").each(function(o,e){"undefined"!=typeof loadLazysrc&&loadLazysrc(e)}),window.blockPromoHide=jQuery(e).data("blockhiding"),showPromoIfPermitted(),d=!0,!1}),d||e&&console.log("No allowed banner found on promo config page.")}}).fail(function(){e&&console.log("No promo page found for campaign code "+campaignCode)}),window.promoTriggered=!0,dtmEventTrigger("ps.promoTriggered",{}))})}}(window.DemandbaseMini.IP||noDBpromo)&&promoCheck(),setTimeout(function(){window.promoChecked||window.promoCheck()},3e3);
+</script>
+<div id="content" role="main">
+<div class="contain"><div class="generic-block section">
+<div class="generic-block-wrapper parallax block block--black block--left generic-block--five-ten padding-top-fifty padding-bottom-fifty clearfix">
+<div class="main clearfix">
+<div class="content clearfix"><div class="column-control section">
+<div>
+<div class="container column-control-container ">
+<div class="row large       column-control--super-wide">
+<div class="large-12 columns "><div class="title section">
+<div data-emptytext="Title">
+<h2>
+Javascript Courses
+</h2>
+</div></div>
+<div class="horizontal-rule section">
+<hr></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:20px"></div>
+</div>
+<div class="column-control section">
+<div>
+<div class="container column-control-container gridStacking">
+<div class="row large       column-control--super-wide">
+<div class="large-3 columns "><div class="image section">
+<a href="https://www.pluralsight.com/courses/quick-start-javascript-1-1870?aid=7010a000002BZNLAA4" target="_blank">
+<img src="JavaScript._files/image-res.jfif" alt="img" class="image--full ">
+</a>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:20px"></div>
+</div>
+<div class="text-3 text section">
+<div class="cmp-text">
+<h4>Pluralsight’s Quick Start to JavaScript</h4>
+<p>Learn how to write the programming language from scratch, so you can start creating code of your own.</p>
+</div>
+</div>
+</div>
+<div class="large-3 columns "><div class="image section">
+<a href="https://www.pluralsight.com/courses/javascript-objects-prototypes" target="_blank">
+<img src="JavaScript._files/image-res_009.jfif" alt="ps course image" class="image--full ">
+</a>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:20px"></div>
+</div>
+<div class="text-3 text section">
+<div class="cmp-text">
+<h4>JavaScript Objects and Prototypes</h4>
+<p>In-depth, behind-the-scenes details of creating JavaScript objects, manipulating properties, and using prototypal inheritance.</p>
+</div>
+</div>
+</div>
+<div class="large-3 columns "><div class="image section">
+<a href="https://www.pluralsight.com/courses/javascript-jquery-advanced-techniques" target="_blank">
+<img src="JavaScript._files/image-res_005.jfif" alt="ps course image" class="image--full ">
+</a>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:20px"></div>
+</div>
+<div class="text-3 text section">
+<div class="cmp-text">
+<h4>Advanced Techniques in JavaScript and jQuery</h4>
+<p>Take your JavaScript functions to the next level. Explore events and learn about jQuery Deferred objects.</p>
+</div>
+</div>
+</div>
+<div class="large-3 columns "><div class="image section">
+<a href="https://www.pluralsight.com/courses/javascript-best-practices" target="_blank">
+<img src="JavaScript._files/image-res_007.jfif" alt="ps course image" class="image--full ">
+</a>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:20px"></div>
+</div>
+<div class="text-3 text section">
+<div class="cmp-text">
+<h4>JavaScript Best Practices</h4>
+<p>From syntax oddities, to async patterns, to callbacks, this course 
+will help you identify and prevent common problems and headaches in 
+JavaScript by learning best practices.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:20px"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="generic-block section">
+
+<div class="generic-block-wrapper parallax block block--black block--left generic-block--five-ten padding-top-fifty padding-bottom-fifty clearfix">
+<div class="main clearfix">
+<div class="content clearfix"><div class="column-control section">
+<div>
+<div class="container column-control-container ">
+<div class="row large       column-control--super-wide">
+<div class="large-12 columns "><div class="title section">
+<div data-emptytext="Title">
+<h2>
+Javascript Resources
+</h2>
+</div></div>
+<div class="horizontal-rule section">
+<hr></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="column-control section">
+<div>
+<div class="container column-control-container gridStacking">
+<div class="row large       column-control--super-wide">
+<div class="large-3 columns "><div class="image section">
+<a href="https://www.pluralsight.com/browse/software-development/javascript?aid=7010a000002BZNLAA4" target="_blank">
+<img src="JavaScript._files/image-res_006.png" alt="ps-resource-img" class="image--full ">
+</a>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:20px"></div>
+</div>
+<div class="text-2 section">
+<h4>Pluralsight JavaScript Courses</h4>
+<p>Hundreds of on-demand courses covering fundamental JavaScript tutorials through advanced techniques.</p>
+</div>
+</div>
+<div class="large-3 columns "><div class="image section">
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">
+<img src="JavaScript._files/image-res.png" alt="img" class="image--full ">
+</a>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:20px"></div>
+</div>
+<div class="text-2 section">
+<h4>MDN JavaScript Guide</h4>
+<p>A large series of written guides curated by Mozilla contributors.</p>
+</div>
+</div>
+<div class="large-3 columns "><div class="image section">
+<a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">
+<img src="JavaScript._files/image-res_002.png" alt="img" class="image--full ">
+</a>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:20px"></div>
+</div>
+<div class="text-2 section">
+<h4>Codecademy</h4>
+<p>Interactive courses on JavaScript fundamentals.</p>
+</div>
+</div>
+<div class="large-3 columns "><div class="image section">
+<a href="http://eloquentjavascript.net/" target="_blank">
+<img src="JavaScript._files/image-res_004.png" alt="img" class="image--full ">
+</a>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:20px"></div>
+</div>
+<div class="text-2 section">
+<h4>Eloquent JavaScript</h4>
+<p>An online book about JavaScript, programming, and the wonders of the digital.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:20px"></div>
+</div>
+<div class="column-control section">
+<div>
+<div class="container column-control-container gridStacking">
+<div class="row large       column-control--super-wide">
+<div class="large-3 columns "><div class="image section">
+<a href="http://jsforcats.com/" target="_blank">
+<img src="JavaScript._files/image-res_003.png" alt="img" class="image--full ">
+</a>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:20px"></div>
+</div>
+<div class="text-2 section">
+<h4>JavaScript for Cats</h4>
+<p>If you’re a cat who wants to learn JavaScript, there isn’t a better online book.</p>
+</div>
+</div>
+<div class="large-3 columns "><div class="image section">
+<a href="https://github.com/getify/You-Dont-Know-JS" target="_blank">
+<img src="JavaScript._files/image-res_007.png" alt="img" class="image--full ">
+</a>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:20px"></div>
+</div>
+<div class="text-2 section">
+<h4>You Don’t Know JavaScript</h4>
+<p>A series of books by Kyle Simpson that dives deep into JavaScript.</p>
+</div>
+</div>
+<div class="large-3 columns "><div class="image section">
+<a href="https://jsbooks.revolunet.com/" target="_blank">
+<img src="JavaScript._files/image-res_005.png" alt="img" class="image--full ">
+</a>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:20px"></div>
+</div>
+<div class="text-2 section">
+<h4>JSbooks</h4>
+<p>An extensive collection of free JavaScript books.</p>
+</div>
+</div>
+<div class="large-3 columns ">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="generic-block section">
+<div class="generic-block-wrapper parallax block block--true-black block--left generic-block--cigar padding-top-fifty padding-bottom-fifty clearfix">
+<div class="main clearfix">
+<div class="content clearfix"><div class="column-control section">
+<div>
+<div class="container column-control-container ">
+<div class="row large       column-control--super-wide">
+<div class="large-12 columns "><div class="title section">
+<div data-emptytext="Title">
+<h2>
+JavaScript Learning Paths
+</h2>
+</div></div>
+<div class="horizontal-rule section">
+<hr></div>
+<div class="content-highlight section">
+
+<div id="pathContent" class="clearfix tab-content content-highlight-content manual multiple-per-row display-list-view">
+<div id="path-list-target" class="path-row row clearfix">
+<div class="path-list-page">
+<div class="item">
+<a href="https://www.pluralsight.com/paths/javascript">
+<div class="item-each">
+<div class="item-image">
+<img alt="JavaScript" src="JavaScript._files/javascript-36f5949a45.png">
+</div>
+<div class="item-text">
+<div class="course-item__type">Path</div>
+<div class="course-item__title">JavaScript</div>
+<ul>
+<li><span>11</span> Courses</li>
+<li><span>26</span> Hours</li>
+<li class="has-skill-iq has-test" title="Skill IQ available">
+<svg viewBox="0 0 512 512"><title>Skill IQ available</title><defs><linearGradient x1="23.812%" y1="22.445%" x2="100%" y2="100%" id="icon-datacamp-linearGradient"><stop stop-color="#F05A28" offset="0%"></stop><stop stop-color="#E80A89" offset="100%"></stop></linearGradient></defs><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill-rule="nonzero"><path d="M512,256 L512,512 L256,512 C114.615104,512 0,397.384896 0,256 C0,114.615104 114.615104,0 256,0 C397.384896,0 512,114.615104 512,256 Z" fill="url(#icon-datacamp-linearGradient)"></path><circle fill="#222222" cx="260.736" cy="260.736" r="132.736"></circle></g></g></svg>
+<span>Get your Skill IQ</span>
+</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="https://www.pluralsight.com/paths/jquery">
+<div class="item-each">
+<div class="item-image">
+<img alt="jQuery" src="JavaScript._files/jquery-c93ba170c1.png">
+</div>
+<div class="item-text">
+<div class="course-item__type">Path</div>
+<div class="course-item__title">jQuery</div>
+<ul>
+<li><span>8</span> Courses</li>
+<li><span>27</span> Hours</li>
+<li class="has-skill-iq has-test" title="Skill IQ available">
+<svg viewBox="0 0 512 512"><title>Skill IQ available</title><defs><linearGradient x1="23.812%" y1="22.445%" x2="100%" y2="100%" id="icon-datacamp-linearGradient"><stop stop-color="#F05A28" offset="0%"></stop><stop stop-color="#E80A89" offset="100%"></stop></linearGradient></defs><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill-rule="nonzero"><path d="M512,256 L512,512 L256,512 C114.615104,512 0,397.384896 0,256 C0,114.615104 114.615104,0 256,0 C397.384896,0 512,114.615104 512,256 Z" fill="url(#icon-datacamp-linearGradient)"></path><circle fill="#222222" cx="260.736" cy="260.736" r="132.736"></circle></g></g></svg>
+<span>Get your Skill IQ</span>
+</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="https://www.pluralsight.com/paths/angular">
+<div class="item-each">
+<div class="item-image">
+<img alt="Angular" src="JavaScript._files/angular-14a0f6532f.png">
+</div>
+<div class="item-text">
+<div class="course-item__type">Path</div>
+<div class="course-item__title">Angular</div>
+<ul>
+<li><span>14</span> Courses</li>
+<li><span>52</span> Hours</li>
+<li class="has-skill-iq has-test" title="Skill IQ available">
+<svg viewBox="0 0 512 512"><title>Skill IQ available</title><defs><linearGradient x1="23.812%" y1="22.445%" x2="100%" y2="100%" id="icon-datacamp-linearGradient"><stop stop-color="#F05A28" offset="0%"></stop><stop stop-color="#E80A89" offset="100%"></stop></linearGradient></defs><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill-rule="nonzero"><path d="M512,256 L512,512 L256,512 C114.615104,512 0,397.384896 0,256 C0,114.615104 114.615104,0 256,0 C397.384896,0 512,114.615104 512,256 Z" fill="url(#icon-datacamp-linearGradient)"></path><circle fill="#222222" cx="260.736" cy="260.736" r="132.736"></circle></g></g></svg>
+<span>Get your Skill IQ</span>
+</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="https://www.pluralsight.com/paths/node-js">
+<div class="item-each">
+<div class="item-image">
+<img alt="Node.js" src="JavaScript._files/nodejs-601628d09d.png">
+</div>
+<div class="item-text">
+<div class="course-item__type">Path</div>
+<div class="course-item__title">Node.js</div>
+<ul>
+<li><span>16</span> Courses</li>
+<li><span>39</span> Hours</li>
+<li class="has-skill-iq has-test" title="Skill IQ available">
+<svg viewBox="0 0 512 512"><title>Skill IQ available</title><defs><linearGradient x1="23.812%" y1="22.445%" x2="100%" y2="100%" id="icon-datacamp-linearGradient"><stop stop-color="#F05A28" offset="0%"></stop><stop stop-color="#E80A89" offset="100%"></stop></linearGradient></defs><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill-rule="nonzero"><path d="M512,256 L512,512 L256,512 C114.615104,512 0,397.384896 0,256 C0,114.615104 114.615104,0 256,0 C397.384896,0 512,114.615104 512,256 Z" fill="url(#icon-datacamp-linearGradient)"></path><circle fill="#222222" cx="260.736" cy="260.736" r="132.736"></circle></g></g></svg>
+<span>Get your Skill IQ</span>
+</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+<div class="item">
+<a href="https://www.pluralsight.com/paths/react">
+<div class="item-each">
+<div class="item-image">
+<img alt="React" src="JavaScript._files/react-0f6558f88f.png">
+</div>
+<div class="item-text">
+<div class="course-item__type">Path</div>
+<div class="course-item__title">React</div>
+<ul>
+<li><span>12</span> Courses</li>
+<li><span>42</span> Hours</li>
+<li class="has-skill-iq has-test" title="Skill IQ available">
+<svg viewBox="0 0 512 512"><title>Skill IQ available</title><defs><linearGradient x1="23.812%" y1="22.445%" x2="100%" y2="100%" id="icon-datacamp-linearGradient"><stop stop-color="#F05A28" offset="0%"></stop><stop stop-color="#E80A89" offset="100%"></stop></linearGradient></defs><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill-rule="nonzero"><path d="M512,256 L512,512 L256,512 C114.615104,512 0,397.384896 0,256 C0,114.615104 114.615104,0 256,0 C397.384896,0 512,114.615104 512,256 Z" fill="url(#icon-datacamp-linearGradient)"></path><circle fill="#222222" cx="260.736" cy="260.736" r="132.736"></circle></g></g></svg>
+<span>Get your Skill IQ</span>
+</li>
+</ul>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="generic-block section">
+<div class="generic-block-wrapper parallax block block--black block--left generic-block--tall padding-top-fifty padding-bottom-fifty clearfix">
+<div class="main clearfix">
+<div class="content clearfix"><div class="column-control section">
+<div>
+<div class="container column-control-container ">
+<div class="row large       column-control--super-wide">
+<div class="large-12 columns "><div class="title section">
+<div data-emptytext="Title">
+<h2>
+JavaScript Webinars
+</h2>
+</div></div>
+<div class="horizontal-rule section">
+<hr></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="column-control section">
+<div>
+<div class="container column-control-container gridStacking">
+<div class="row large       column-control--super-wide">
+<div class="large-3 columns "><div class="image section">
+<a href="https://www.pluralsight.com/resource-center/webinars/angular-in-2017?aid=7010a000002BZNLAA4" target="_blank">
+<img src="JavaScript._files/image-res.jpg" alt="img" class="image--full ">
+</a>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:20px"></div>
+</div>
+<div class="text-2 section">
+<h4>Angular in 2017: What’s new and what to expect</h4>
+<p>Explore where your team should begin working with the newest features, how to handle future updates to the framework and more.</p>
+</div>
+</div>
+<div class="large-3 columns "><div class="image section">
+<a href="https://www.pluralsight.com/resource-center/webinars/on-demand-webinar-an-angular-force-awakens-with-john-papa?aid=7010a000002BZNLAA4" target="_blank">
+<img src="JavaScript._files/image-res_006.jfif" alt="img" class="image--full ">
+</a>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:20px"></div>
+</div>
+<div class="text-2 section">
+<h4>An Angular force awakens with John Papa</h4>
+<p>The 7 fundamentals of Angular 2, key features, accessing data via 
+HTTP, using metadata to describe components and new templating and data 
+binding concepts.</p>
+</div>
+</div>
+<div class="large-3 columns "><div class="image section">
+<a href="https://www.pluralsight.com/resource-center/webinars/angular-2-0-what-you-need-to-know?aid=7010a000002BZNLAA4" target="_blank">
+<img src="JavaScript._files/image-res_008.jfif" alt="img" class="image--full ">
+</a>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:20px"></div>
+</div>
+<div class="text-2 section">
+<h4>Angular 2.0: What you need to know&nbsp;</h4>
+<p>What’s different with 2.0, what’s staying the same and how you can begin experimenting with it today.</p>
+</div>
+</div>
+<div class="large-3 columns "><div class="image section">
+<a href="https://www.pluralsight.com/resource-center/webinars/is-your-team-ready-to-learn-react-?aid=7010a000002BZNLAA4" target="_blank">
+<img src="JavaScript._files/image-res_004.jfif" alt="img" class="image--full ">
+</a>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:20px"></div>
+</div>
+<div class="text-2 section">
+<h4>Is your team ready to learn React?</h4>
+<p>Compare React.js to popular alternatives like Angular and jQuery and 
+learn why you should start using it in your front-end workflow.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:20px"></div>
+</div>
+<div class="column-control section">
+<div>
+<div class="container column-control-container gridStacking">
+<div class="row large       column-control--super-wide">
+<div class="large-3 columns "><div class="image section">
+<a href="https://www.pluralsight.com/resource-center/webinars/getting-started-with-go?aid=7010a000002BZNLAA4" target="_blank">
+<img src="JavaScript._files/image-res_002.jfif" alt="img">
+</a>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:20px"></div>
+</div>
+<div class="text-2 section">
+<h4>Getting Started With Go</h4>
+<p>Find out if Go, the popular, open source programming language from Google, is right for you and your team.</p>
+</div>
+</div>
+<div class="large-3 columns "><div class="image section">
+<a href="https://www.pluralsight.com/resource-center/webinars/on-demand-webinar-json-is-taking-over-the-world?aid=7010a000002BZNLAA4" target="_blank">
+<img src="JavaScript._files/image-res_003.jfif" alt="img" class="image--full ">
+</a>
+</div>
+<div class="spacer section">
+<div class="spacer  " style="height:20px"></div>
+</div>
+<div class="text-2 section">
+<h4>JSON is taking over the world</h4>
+<p>With the rise of JavaScript-based frameworks and libraries, JSON may be the best option you haven’t considered yet.</p>
+</div>
+</div>
+<div class="large-3 columns "><div class="image section">
+</div>
+<div class="text-2 section">
+<p class="rich-text-component cq-text-placeholder-ipe" data-emptytext="Text (old)"></p></div>
+</div>
+<div class="large-3 columns "><div class="image section">
+</div>
+<div class="text-2 section">
+<p class="rich-text-component cq-text-placeholder-ipe" data-emptytext="Text (old)"></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="ps_pro_qty_modal">
+<div class="column-control section">
+<div class="container column-control-container ">
+<div class="row column-control--wide">
+<div class="large-5 columns column_qty large-push-7">
+<h3>Ready to skill up<br>your entire team?</h3>
+<div class="qty-selector">
+<div class="qty-down"><i class="icons" icon="down-arrow"></i></div>
+<div class="qty-display">
+<div class="qty-display-number">10</div>
+<div class="qty-display-label">Licenses</div>
+</div>
+<div class="qty-up"><i class="icons" icon="up-arrow"></i></div>
+</div>
+<div class="qty-sales-message hidden">Need more licenses? <a href="https://www.pluralsight.com/business/contact-sales">Contact sales</a>.</div>
+<a class="button button--gradient button--small biz_qty_checkout pilot-hide" data-aa-title="pro-qty-modal-signup" href="https://www.pluralsight.com/buy?requestId=fc897bb4-6606-4324-b065-aeb74ca97264&amp;priceOptionId=f8c2aa27-af04-4ddc-aef8-b12a02a9968e&amp;legacyTrackingId=PROFESSIONAL-SG&amp;time=1563986363715&amp;quantity=10" data-product-sku="PROFESSIONAL-SG">Continue to checkout</a>
+<a class="button button--gradient button--small biz_qty_checkout pilot-show" data-aa-title="pro-qty-modal-trial" href="https://www.pluralsight.com/buy?requestId=fc897bb4-6606-4324-b065-aeb74ca97264&amp;priceOptionId=2b5be31d-9b12-421b-858b-e532fb857a2d&amp;legacyTrackingId=PROFESSIONAL-SG-PILOT&amp;time=1563986363715&amp;quantity=10" data-product-sku="PROFESSIONAL-SG-PILOT">Continue to checkout</a>
+<div class="ps_pro_qty_modal-cancel">Cancel</div>
+</div>
+<div class="large-7 columns column_feature large-pull-5">
+<h3 class="pilot-hide">With your Pluralsight plan, you can:</h3>
+<h3 class="pilot-show">With your 14-day pilot, you can:</h3>
+<ul>
+<li class="pilot-hide">Access thousands of videos to develop critical skills</li>
+<li class="pilot-show">Give up to 10 users access to thousands of video courses</li>
+<li>Practice and apply skills with interactive courses and projects</li>
+<li>See skills, usage, and trend data for your teams</li>
+<li>Prepare for certifications with industry-leading practice exams</li>
+<li>Measure proficiency across skills and roles</li>
+<li>Align learning to your goals with paths and channels</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<noindex>
+<footer class="javascript-footer">
+<div class="right-content">
+<a href="https://www.javascript.com/learn/strings" class="footer-link">Learn</a>
+<span class="footer-divider">/</span>
+<a href="https://www.javascript.com/resources" class="footer-link">Resources</a>
+<span class="footer-divider">/</span>
+<a href="https://www.javascript.com/about" class="footer-link">About</a>
+</div>
+<div class="left-content">
+<a href="https://www.javascript.com/"><img class="javascript-logo logo-large" src="JavaScript._files/js-logo.png"></a>
+<a href="https://www.javascript.com/"><img class="javascript-logo logo-small" src="JavaScript._files/js-logo-sm.png"></a>
+<p class="copyright">© 2016 - 2019 JavaScript.com</p>
+</div>
+</footer>
+</noindex>
+<style>
+    .cookie_notification--opt_in{
+        color: #e80a89 !important;
+        border-color: #e80a89 !important;
+    }
+</style>
+<script>
+function isElementInViewport (el) {
+  var rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+  );
+}
+function loadLazysrc(item){
+  var $item = jQuery(item);
+  if ($item.hasClass("lazy-bg")){
+    $item.removeClass("lazy-bg");
+  } else {
+    var src = $item.attr('data-lazysrc');
+    $item.attr('src',src);
+    $item.removeAttr('data-lazysrc');
+  }
+}
+
+//lazy load images above the fold
+jQuery('img[data-lazysrc],.lazy-bg').each(function(index,item){
+  if ( jQuery(item).is(":visible") && isElementInViewport(item) ){
+    loadLazysrc(item);
+  }
+});
+
+//lazy load images below the fold. Keep function available for promo service or others that may need it.
+window.addEventListener('load', function(){
+  jQuery('img[data-lazysrc],.lazy-bg').each(function(index,item){
+    loadLazysrc(item);
+  });
+});
+</script>
+<script type="text/javascript" src="JavaScript._files/uber.js" defer="defer"></script>
+</div>
+</div>
+<div class="cookie_notification options" style="">
+<p class="cookie_notification--text">We use cookies to make interactions
+ with our websites and services easy and meaningful. For more 
+information about the cookies we use or to find out how you can disable 
+cookies, <a href="https://www.pluralsight.com/privacy" target="_blank">click here</a>.</p>
+<div class="cookie_notification--options">
+<a class="button button--secondary button--tiny cookie_notification--opt_in" href="#">Accept cookies and close this message</a>
+<a class="cookie_notification--opt_out" href="#">Disable cookies</a>
+</div>
+</div>
+<div class="cookie_notification opted_out" style="display:none;">
+<p class="cookie_notification--text">You have disabled cookies and are 
+browsing in private mode. For the best possible experience on our 
+website, please accept cookies. For additional details please read our <a href="https://www.pluralsight.com/privacy" target="_blank">privacy policy</a>.</p>
+<a class="cookie_notification--opt_in text-only" href="#">Accept cookies and close this message</a>
+</div>
+<script data-cfasync="false">
+-1==document.cookie.indexOf("ps_optout")&&-1==document.URL.indexOf("noCookieBanner=true")?jQuery(".cookie_notification.options").slideDown():document.cookie.indexOf("ps_optout=1")>-1&&jQuery(".cookie_notification.opted_out").slideDown(),jQuery(".cookie_notification--opt_in").click(function(o){o.preventDefault();var t=new Date(Date.now()+31536e6);document.cookie="ps_optout=0; expires="+t.toUTCString()+"; path=/"+(document.URL.indexOf("pluralsight.com")>-1?"; domain=pluralsight.com":""),jQuery(".cookie_notification").slideUp()}),jQuery(".cookie_notification--opt_out").click(function(o){o.preventDefault();for(var t=document.cookie.split("; "),e=0;e<t.length;e++)for(var i=window.location.hostname.split(".");i.length>=0;){var n=t[e].split(";")[0].split("=")[0]+"=; expires="+(new Date).toUTCString()+(i.length>0?"; domain="+i.join("."):"")+" ;path=",c=location.pathname.split("/");for(document.cookie=n+"/";c.length>0;)document.cookie=n+c.join("/"),c.pop();if(0==i.length)break;i.shift()}var a=new Date(Date.now()+31536e6);document.cookie="ps_optout=1; expires="+a.toUTCString()+"; path=/"+(document.URL.indexOf("pluralsight.com")>-1?"; domain=pluralsight.com":""),window.location.reload()});
+</script>
+
+
+<script>
+setTimeout(function(){var e=document.createElement("script"),t=document.getElementsByTagName("script")[0];e.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0061/1067.js?"+Math.floor((new Date).getTime()/36e5),e.async=!0,e.type="text/javascript",t.parentNode.insertBefore(e,t)},2);
+</script></body></html>
